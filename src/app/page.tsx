@@ -171,7 +171,7 @@ export default function Home() {
       icon: null,
     },
     {
-      title: 'Watch us on WithMe',
+      title: 'Courses, coaching and membership',
       description: '',
       href: 'https://withme.so/dcacoaching',
       image: WithMeLogo,
