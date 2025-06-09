@@ -210,7 +210,7 @@ export default function Home() {
 
             <div className="relative z-30">
               <h1
-                className={`${bebasNeue.className} -mt-16 mb-4 text-4xl leading-none text-white sm:mt-6 sm:text-5xl`}
+                className={`${bebasNeue.className} -mt-16 mb-4 text-5xl leading-none text-white sm:mt-6 sm:text-6xl`}
               >
                 DCA Nutrition
               </h1>
