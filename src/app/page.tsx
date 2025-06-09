@@ -8,7 +8,7 @@ import {
   YouTubeIcon,
   FacebookIcon,
 } from '@/components/SocialIcons'
-import { Satisfy } from 'next/font/google'
+import { Bebas_Neue } from 'next/font/google'
 import { FreeTrialBanner } from '@/components/FreeTrial'
 import WithMeLogo from '@/images/photos/withmelogo.png'
 import Founders from '../images/photos/founders_logo.png'
@@ -16,7 +16,7 @@ import Coaching from '../images/photos/coaching.jpg'
 import MealPlan from '../images/photos/meal_plan.webp'
 import { TbPhoneCall, TbPhoneCalling, TbShoppingBag, TbWorld } from 'react-icons/tb'
 
-const satisfy = Satisfy({
+const bebasNeue = Bebas_Neue({
   subsets: ['latin'],
   weight: '400',
   display: 'swap',
@@ -92,7 +92,7 @@ function LinkBox({
         <div className="text-left">
           <h2 className="pr-6 text-xs font-bold text-white">{title}</h2>
           {description && (
-            <p className="mt-0.5 text-xs text-white/80">{description}</p>
+            <p className="mt-0.5 text-xs text-white/80" style={{lineHeight: '1.4'}}>{description}</p>
           )}
         </div>
       </div>
@@ -149,36 +149,36 @@ export default function Home() {
       image: Coaching,
       icon: null,
     },
+    // {
+    //   title: 'Schedule your free call',
+    //   description: '',
+    //   href: 'https://cecilia.dcanutrition.com/home',
+    //   image: null,
+    //   icon: TbPhoneCall,
+    // },
     {
-      title: 'Schedule your free call',
-      description: '',
-      href: 'https://cecilia.dcanutrition.com/home',
-      image: null,
-      icon: TbPhoneCall,
-    },
-    {
-      title: 'Get our nutrition products',
+      title: 'Get our Nutrition Products',
       description: '',
       href: 'https://shop.dcanutrition.com/',
       image: null,
       icon: TbShoppingBag,
     },
     {
-      title: 'Download free meal plan',
+      title: 'Free Resources',
       description: 'Here is your free Meal Plan for Busy Professionals download',
       href: 'https://dcanutrition.com/freedcanutritiondownloads',
       image: MealPlan,
       icon: null,
     },
     {
-      title: 'Courses, coaching and membership',
+      title: 'Courses, Coaching and Membership',
       description: '',
       href: 'https://withme.so/dcacoaching',
       image: WithMeLogo,
       icon: null,
     },
     {
-      title: 'Contact us',
+      title: 'Contact Us',
       description: '',
       href: 'tel:2105601082',
       image: null,
@@ -210,7 +210,7 @@ export default function Home() {
 
             <div className="relative z-30">
               <h1
-                className={`${satisfy.className} -mt-16 mb-4 text-4xl leading-none text-white sm:mt-6 sm:text-5xl`}
+                className={`${bebasNeue.className} -mt-16 mb-4 text-4xl leading-none text-white sm:mt-6 sm:text-5xl`}
               >
                 DCA Nutrition
               </h1>
